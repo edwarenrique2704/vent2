@@ -1,0 +1,37 @@
+<mat-toolbar color="primary">
+  <span (click)="inicio()">SP Ventas</span>
+  <span class="example-spacer"></span>
+  <button mat-icon-button class="example-icon favorite-icon" aria-label="Example icon-button with heart icon"(click)="inicio()">
+    <mat-icon>shopping_cart</mat-icon>
+  </button>
+  <button mat-icon-button class="example-icon" aria-label="Example icon-button with next icon">
+    <mat-icon>next_week</mat-icon>
+  </button>
+  <button mat-icon-button class="example-icon" aria-label="Example icon-button with next icon"(click)="RegistrarVenta()">
+    <mat-icon>save</mat-icon>
+  </button>
+  <button mat-icon-button class="example-icon" aria-label="Example icon-button with next icon"(click)="ReporteVenta()">
+    <mat-icon>report</mat-icon>
+  </button>
+</mat-toolbar>
+  <div class="container">
+    <div class="card">
+      <mat-card *ngFor="let sale of listaVenta" class="sale-card">
+      <mat-card-title>Venta ID: {{ sale.idVenta }}</mat-card-title>
+      <mat-card-content>
+        <p>Date: {{ sale.fecha_venta }}</p>
+        <p>Total: {{ sale.total }}</p>
+        <div *ngIf="sale.detalleVentas.length > 0">
+          <p>Details:</p>
+          <ul>
+            <li *ngFor="let detail of sale.detalleVentas">
+              Product ID: {{ detail.id_producto }}, Quantity: {{ detail.cant }}
+            </li>
+          </ul>
+        </div>
+      </mat-card-content>
+    </mat-card>
+    </div>
+    
+  </div>
+  

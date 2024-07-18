@@ -1,0 +1,13 @@
+# Visual Studio Code y Visual Studio
+.vscode/
+*.suo
+*.sln.cache
+*.sln.docstates
+*.user
+*.userosscache
+*.suo
+*.nuget/
+*.dotCover
+*.dotsettings
+*.opendb
+? are

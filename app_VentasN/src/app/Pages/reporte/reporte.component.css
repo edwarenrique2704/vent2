@@ -1,0 +1,16 @@
+.reporte-container {
+    margin: 20px;
+  }
+  
+  mat-form-field {
+    width: 100%;
+    max-width: 300px;
+    margin-right: 10px;
+  }
+  
+ 
+  table {
+    width: 100%;
+    margin-top: 20px;
+  }
+  

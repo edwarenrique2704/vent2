@@ -1,0 +1,75 @@
+
+
+<mat-toolbar color="primary">
+  <span (click)="inicio()">SP Ventas</span>
+  <span class="example-spacer"></span>
+  <button mat-icon-button class="example-icon favorite-icon" aria-label="Example icon-button with heart icon"(click)="inicio()">
+    <mat-icon>shopping_cart</mat-icon>
+  </button>
+  <button mat-icon-button class="example-icon" aria-label="Example icon-button with next icon"(click)="ventas()">
+    <mat-icon>next_week</mat-icon>
+  </button>
+  <button mat-icon-button class="example-icon" aria-label="Example icon-button with next icon"(click)="RegistrarVenta()">
+    <mat-icon>save</mat-icon>
+  </button>
+  <button mat-icon-button class="example-icon" aria-label="Example icon-button with next icon"(click)="ReporteVenta()">
+    <mat-icon>report</mat-icon>
+  </button>
+</mat-toolbar>
+
+  <div class="reporte-container">
+    <mat-form-field>
+      <mat-label>Fecha Inicio</mat-label>
+      <input matInput [(ngModel)]="fechaInicio" name="fechaInicio" type="text" required>
+    </mat-form-field>
+    <mat-form-field>
+      <mat-label>fecha fin</mat-label>
+      <input matInput [(ngModel)]="fechaFin" name="fechaFin" type="text" required>
+    </mat-form-field>
+    <button mat-raised-button color="primary" class="boton-reporte" (click)="obtenerReporte()">Obtener Reporte</button>
+    <button mat-raised-button color="warn"
+            
+            (click)="exportarReporte()">
+      <mat-icon>feed</mat-icon>
+      Exportar Excel
+    </button>
+    
+  
+    <div *ngIf="reportes.length > 0">
+      <table mat-table [dataSource]="reportes" class="mat-elevation-z8">
+        <ng-container matColumnDef="id_venta">
+          <th mat-header-cell *matHeaderCellDef> ID Venta </th>
+          <td mat-cell *matCellDef="let reporte"> {{ reporte.id_venta }} </td>
+        </ng-container>
+  
+        <ng-container matColumnDef="nombre">
+          <th mat-header-cell *matHeaderCellDef> Nombre </th>
+          <td mat-cell *matCellDef="let reporte"> {{ reporte.nombre }} </td>
+        </ng-container>
+  
+        <ng-container matColumnDef="precio">
+          <th mat-header-cell *matHeaderCellDef> Precio </th>
+          <td mat-cell *matCellDef="let reporte"> {{ reporte.precio }} </td>
+        </ng-container>
+  
+        <ng-container matColumnDef="fecha_venta">
+          <th mat-header-cell *matHeaderCellDef> Fecha Venta </th>
+          <td mat-cell *matCellDef="let reporte"> {{ reporte.fecha_venta }} </td>
+        </ng-container>
+  
+        <ng-container matColumnDef="cant">
+          <th mat-header-cell *matHeaderCellDef> Cantidad </th>
+          <td mat-cell *matCellDef="let reporte"> {{ reporte.cant }} </td>
+        </ng-container>
+  
+        <ng-container matColumnDef="total">
+          <th mat-header-cell *matHeaderCellDef> Total </th>
+          <td mat-cell *matCellDef="let reporte"> {{ reporte.total }} </td>
+        </ng-container>
+  
+        <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+        <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+      </table>
+    </div>
+  </div>
+  

@@ -1,0 +1,46 @@
+<mat-toolbar color="primary">
+  <span (click)="inicio()">SP Ventas</span>
+  <span class="example-spacer"></span>
+  <button mat-icon-button class="example-icon favorite-icon" aria-label="Example icon-button with heart icon"(click)="inicio()">
+    <mat-icon>shopping_cart</mat-icon>
+  </button>
+  <button mat-icon-button class="example-icon" aria-label="Example icon-button with next icon"(click)="ventas()">
+    <mat-icon>next_week</mat-icon>
+  </button>
+  <button mat-icon-button class="example-icon" aria-label="Example icon-button with next icon"(click)="RegistrarVenta()">
+    <mat-icon>save</mat-icon>
+  </button>
+  <button mat-icon-button class="example-icon" aria-label="Example icon-button with next icon"(click)="ReporteVenta()">
+    <mat-icon>report</mat-icon>
+  </button>
+</mat-toolbar>
+
+<div class="container">
+  <form [formGroup]="ventaForm" (ngSubmit)="onSubmit()">
+    <mat-form-field appearance="fill">
+      <mat-label>Fecha de Venta</mat-label>
+      <input matInput formControlName="fecha_venta" type="text">
+      <mat-error *ngIf="ventaForm.get('fecha_venta')?.invalid && ventaForm.get('fecha_venta')?.touched">
+        Fecha de venta es requerida
+      </mat-error>
+    </mat-form-field>
+
+    <mat-form-field appearance="fill">
+      <mat-label>ID Producto</mat-label>
+      <input matInput formControlName="id_producto" type="number">
+      <mat-error *ngIf="ventaForm.get('id_producto')?.invalid && ventaForm.get('id_producto')?.touched">
+        ID de producto es requerido y debe ser mayor a 0
+      </mat-error>
+    </mat-form-field>
+
+    <mat-form-field appearance="fill">
+      <mat-label>Cantidad</mat-label>
+      <input matInput formControlName="cant" type="number">
+      <mat-error *ngIf="ventaForm.get('cant')?.invalid && ventaForm.get('cant')?.touched">
+        Cantidad es requerida y debe ser mayor a 0
+      </mat-error>
+    </mat-form-field>
+
+    <button mat-raised-button color="primary" type="submit " class="buton" [disabled]="ventaForm.invalid">Registrar Venta</button>
+  </form>
+</div>

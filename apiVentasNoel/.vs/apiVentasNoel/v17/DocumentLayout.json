@@ -1,0 +1,85 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\gneegarcia\\Desktop\\repos\\.net\\app_VentasNoel\\apiVentasNoel\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{B078D496-473A-4539-9A47-57CFB3453314}|apiVentasNoel\\apiVentasNoel.csproj|c:\\users\\gneegarcia\\desktop\\repos\\.net\\app_ventasnoel\\apiventasnoel\\apiventasnoel\\data\\ventadata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B078D496-473A-4539-9A47-57CFB3453314}|apiVentasNoel\\apiVentasNoel.csproj|solutionrelative:apiventasnoel\\data\\ventadata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B078D496-473A-4539-9A47-57CFB3453314}|apiVentasNoel\\apiVentasNoel.csproj|c:\\users\\gneegarcia\\desktop\\repos\\.net\\app_ventasnoel\\apiventasnoel\\apiventasnoel\\controllers\\productocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B078D496-473A-4539-9A47-57CFB3453314}|apiVentasNoel\\apiVentasNoel.csproj|solutionrelative:apiventasnoel\\controllers\\productocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B078D496-473A-4539-9A47-57CFB3453314}|apiVentasNoel\\apiVentasNoel.csproj|c:\\users\\gneegarcia\\desktop\\repos\\.net\\app_ventasnoel\\apiventasnoel\\apiventasnoel\\data\\productodata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B078D496-473A-4539-9A47-57CFB3453314}|apiVentasNoel\\apiVentasNoel.csproj|solutionrelative:apiventasnoel\\data\\productodata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B078D496-473A-4539-9A47-57CFB3453314}|apiVentasNoel\\apiVentasNoel.csproj|c:\\users\\gneegarcia\\desktop\\repos\\.net\\app_ventasnoel\\apiventasnoel\\apiventasnoel\\models\\producto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B078D496-473A-4539-9A47-57CFB3453314}|apiVentasNoel\\apiVentasNoel.csproj|solutionrelative:apiventasnoel\\models\\producto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "VentaData.cs",
+              "DocumentMoniker": "C:\\Users\\gneegarcia\\Desktop\\repos\\.net\\app_VentasNoel\\apiVentasNoel\\apiVentasNoel\\Data\\VentaData.cs",
+              "RelativeDocumentMoniker": "apiVentasNoel\\Data\\VentaData.cs",
+              "ToolTip": "C:\\Users\\gneegarcia\\Desktop\\repos\\.net\\app_VentasNoel\\apiVentasNoel\\apiVentasNoel\\Data\\VentaData.cs",
+              "RelativeToolTip": "apiVentasNoel\\Data\\VentaData.cs",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAuwAsAAAApAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-15T18:45:37.311Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ProductoData.cs",
+              "DocumentMoniker": "C:\\Users\\gneegarcia\\Desktop\\repos\\.net\\app_VentasNoel\\apiVentasNoel\\apiVentasNoel\\Data\\ProductoData.cs",
+              "RelativeDocumentMoniker": "apiVentasNoel\\Data\\ProductoData.cs",
+              "ToolTip": "C:\\Users\\gneegarcia\\Desktop\\repos\\.net\\app_VentasNoel\\apiVentasNoel\\apiVentasNoel\\Data\\ProductoData.cs",
+              "RelativeToolTip": "apiVentasNoel\\Data\\ProductoData.cs",
+              "ViewState": "AQIAAGYAAAAAAAAAAAA7wB8AAABQAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-15T16:14:25.055Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ProductoController.cs",
+              "DocumentMoniker": "C:\\Users\\gneegarcia\\Desktop\\repos\\.net\\app_VentasNoel\\apiVentasNoel\\apiVentasNoel\\Controllers\\ProductoController.cs",
+              "RelativeDocumentMoniker": "apiVentasNoel\\Controllers\\ProductoController.cs",
+              "ToolTip": "C:\\Users\\gneegarcia\\Desktop\\repos\\.net\\app_VentasNoel\\apiVentasNoel\\apiVentasNoel\\Controllers\\ProductoController.cs",
+              "RelativeToolTip": "apiVentasNoel\\Controllers\\ProductoController.cs",
+              "ViewState": "AQIAACMAAAAAAAAAAAAgwCgAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-15T16:17:44.792Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Producto.cs",
+              "DocumentMoniker": "C:\\Users\\gneegarcia\\Desktop\\repos\\.net\\app_VentasNoel\\apiVentasNoel\\apiVentasNoel\\Models\\Producto.cs",
+              "RelativeDocumentMoniker": "apiVentasNoel\\Models\\Producto.cs",
+              "ToolTip": "C:\\Users\\gneegarcia\\Desktop\\repos\\.net\\app_VentasNoel\\apiVentasNoel\\apiVentasNoel\\Models\\Producto.cs",
+              "RelativeToolTip": "apiVentasNoel\\Models\\Producto.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-15T16:34:46.866Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
